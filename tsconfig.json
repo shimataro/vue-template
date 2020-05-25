@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES5"
+  }
+}
