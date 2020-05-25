@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+  "settings": {},
+  "extensions": {
+    "recommendations": [
+      "davidanson.vscode-markdownlint",
+      "dbaeumer.vscode-eslint",
+      "EditorConfig.EditorConfig",
+      "mrmlnc.vscode-puglint",
+      "octref.vetur",
+      "redhat.vscode-yaml",
+      "syler.sass-indented"
+    ]
+  }
+}
