@@ -7,17 +7,15 @@
 <script lang="ts">
 import Vue from "vue";
 
-const component: Vue.Component = {
+export default Vue.extend({
 	name: "App",
-	data: () =>
+	data()
 	{
 		return {
 			message: "hell, word",
 		};
 	},
-};
-
-export default component;
+});
 </script>
 
 <style lang="sass" scoped>
