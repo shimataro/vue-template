@@ -7,7 +7,7 @@ const app = new Vue({ // eslint-disable-line @typescript-eslint/no-unused-vars
 	components: {
 		App,
 	},
-	render: (createElement) =>
+	render(createElement)
 	{
 		return createElement("App");
 	},
