@@ -1,7 +1,13 @@
 import * as path from "path";
 
+import * as dotenv from "dotenv";
+
 import * as webpack from "webpack";
 import {VueLoaderPlugin} from "vue-loader";
+
+const env = dotenv.config({
+	path: path.resolve(".env"),
+});
 
 const config: webpack.Configuration = {
 	mode: "development",
@@ -75,7 +81,12 @@ const config: webpack.Configuration = {
 			vue$: "vue/dist/vue.runtime.esm.js",
 		},
 	},
-	plugins: [new VueLoaderPlugin()],
+	plugins: [
+		new VueLoaderPlugin(),
+		new webpack.DefinePlugin({
+			"process.env": JSON.stringify(env.parsed),
+		}),
+	],
 };
 
 export default config;
