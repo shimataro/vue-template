@@ -12,7 +12,7 @@ export default Vue.extend({
 	data()
 	{
 		return {
-			message: "hell, word",
+			message: process.env.MESSAGE,
 		};
 	},
 });
