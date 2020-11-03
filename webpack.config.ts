@@ -112,7 +112,7 @@ export default (env: Environment, parameters: Parameters): webpack.Configuration
 			},
 		},
 		plugins: [
-			new VueLoaderPlugin(),
+			new VueLoaderPlugin() as webpack.WebpackPluginInstance, // TODO: vue-loader16以降で、asを取り除いてみる
 			new webpack.DefinePlugin({
 				"process.env": JSON.stringify(config),
 			}),
